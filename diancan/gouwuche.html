@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--购物车样式-->
+		<link rel="stylesheet" type="text/css" href="css/gouwuche.css"/>
+		<link rel="stylesheet" type="text/css" href="css/font.css" />
+		
+		<link rel="stylesheet" type="text/css" href="css/app.css" />
+		
+		<!--主体样式-->
+		<link rel="stylesheet" type="text/css" href="css/body.css" />
+
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" style="height: 64px;padding-top:20px">
+			<h1 class="mui-title">购物车</h1>
+		</header>
+		
+		<nav class="mui-bar mui-bar-tab" style="width: 100%;">
+			<div class="mui-input-row mui-checkbox mui-left select" >
+				<label>全选</label>
+				<input value="Item 1" type="checkbox" id="checkAll" onclick="switchAll(this);">
+			</div>
+			<label class="totalPrice" >￥
+				<span id="totalPrice1">0.0
+				</span>
+			</label>
+			<button class="immediately_buy" id="immediately_buy">立即购买</button>
+		</nav>
+	
+		
+		<div class="mui-content" style="margin-top: 5px;">
+			<ul class="mui-table-view" id="goodsList" > 
+				<!--<li class="mui-table-view-cell mui-media">
+					<div class="mui-input-row mui-checkbox mui-left" >
+						<input name="checkbox" value="Item 1" type="checkbox"  class="select_yuanquan check">
+						<img class="gouwuche_content_img" src="../../images/caipin/2.png">
+						<div class="gouwuche_content_body">
+							<p><span class="gouwuche_content_name">糖醋排骨</span></p>
+							<p class="gouwuche_content_detail">糖醋排骨是我...</p>
+							<p class="gouwuche_content_detail">￥<span>10</span></p>
+						</div>
+						<div class="mui-numbox gouwuche_jiajian" data-numbox-min='1' style="margin-top: -30px;" >
+							<button class="mui-btn mui-btn-numbox-minus " type="button">-</button>
+							<input class="mui-input-numbox " type="number" />
+							<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+						</div>
+					</div>
+				</li>-->
+				<li class='mui-table-view-cell mui-media good-content'>
+							<div class="mui-input-row mui-checkbox mui-left" >
+							<input name="checkbox" value="Item 1" type="checkbox"  onclick="checkChange(this);" class="select_yuanquan check" checked id="checkbox'+i+'">
+							<img class="gouwuche_content_img" src="' + result[i].productImage + '">
+							<div class="gouwuche_content_body"><p><span class="gouwuche_content_name"> + result[i].productName + </span><p>
+							<p><span class = "gouwuche_content_detail">  + result[i].productDetail + </p></span> 
+							<p class = "gouwuche_content_detail">￥<span> + result[i].productPrice + </p></span></div>
+							<div class="mui-numbox gouwuche_jiajian" data-numbox-min="0" style="margin-top: -30px;" >
+							<button class="mui-btn mui-btn-numbox-minus" type="button" id="minusBtn'+ i +'">-</button>
+							<input class="mui-input-numbox" value="1" readonly="readonly" type="number" onchange="checkGoods();" data-price="' + result[i].productPrice + '" data-value="0" id="goodPrice'+i+'">
+							<button class="mui-btn mui-btn-numbox-plus" type="button" id="plusBtn'+ i +'">+</button>
+							</div></div></li>
+			</ul>
+		</div>
+
+		<script src="js/mui.min.js"></script>
+
+		<!--购物车JS-->
+		<script src="js/gouwuche.js" type="text/javascript" charset="utf-8"></script>
+		
+	</body>

@@ -1,0 +1,15 @@
+{
+	"gouwuche.html": {
+		"resources": [
+			"img/2.png",
+			"JSON/gouwuche.json",
+			"js/mui.min.js",
+			"css/app.css",
+			"js/gouwuche.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/gouwuche.css",
+			"css/body.css"
+		]
+	}
+}

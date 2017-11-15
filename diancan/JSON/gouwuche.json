@@ -1,0 +1,49 @@
+{
+	"status": 1,
+	"message": "获取商店详细信息成功",
+	"result": [
+		{
+			"productId": 1,
+			"productName": "糖醋排骨",
+			"productPrice": "12",
+			"productImage":"img/2.png",
+			"productDetail":"糖醋排骨是我...",
+			"productSell":"168"
+		}, {
+			"productId": 2,
+			"productName": "糖醋排骨",
+			"productPrice": "12",
+			"productImage":"img/2.png",
+			"productDetail":"糖醋排骨是我...",
+			"productSell":"168"
+		}, {
+			"productId": 3,
+			"productName": "糖醋排骨",
+			"productPrice": "12",
+			"productImage":"img/2.png",
+			"productDetail":"糖醋排骨是我...",
+			"productSell":"168"
+		}, {
+			"productId": 4,
+			"productName": "糖醋排骨",
+			"productPrice": "12",
+			"productImage":"img/2.png",
+			"productDetail":"糖醋排骨是我...",
+			"productSell":"168"
+		}, {
+			"productId": 5,
+			"productName": "糖醋排骨",
+			"productPrice": "12",
+			"productImage":"img/2.png",
+			"productDetail":"糖醋排骨是我...",
+			"productSell":"168"
+		}, {
+			"productId": 6,
+			"productName": "糖醋排骨",
+			"productPrice": "12",
+			"productImage":"img/2.png",
+			"productDetail":"糖醋排骨是我...",
+			"productSell":"168"
+		}
+	]
+}
